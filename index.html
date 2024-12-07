@@ -12,42 +12,94 @@
     <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header class="header">
+        <div class="container container-nav">
+            <div class="logo">
+                <a class="home-link" href="index.html"><h1><img src="Assets/Images/inkVision-Logo-update.png" alt="inkVision Logo"></h1></a>
+            </div>
+            <nav>
+                <ul class="links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#tattoos">Shop</a></li>
+                    <li><a href="#how">How To</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!--
     <div class="title">
         <img src="Assets/Images/inkVision-Logo-update.png" alt=""> 
     </div>
-    
+    -->
+
     <div class="demo">
+        <h2>Welcome to inkVision, where temporary tattoos come to life!</h2>
         <video src="Assets/Video/inkVision-Promo-Video-Updated.mp4" controls></video>
     </div>
 
-    <div class="about">
+    <div class="section">
+    <div class="about" id="about">
         <div class="fav"> 
-            <!-- <img src="Assets/Images/inkVisionTransparent.png" alt="">  -->
-            <p>We are a company that sells temporary tattoos at events such as birthday parties. Our tattoos are created by our talented designers and each contain Augmented Reality fuctionality, allowing you to see fun effects by scanning the tattoo with your phone.</p>
+            <h3>Who Are We?</h3>
+            <div class="img-wrapper">
+                <img src="Assets/Images/inkVision2.png" alt="inkVision Logo Temporary Tattoo">
+            </div>
         </div>
-        <div class="steps">
+            <!-- <img src="Assets/Images/inkVisionTransparent.png" alt="">  -->
+            <p>We blend the fun of temporary tattoos with cutting-edge augmented reality (AR) technology to create an unforgettable, interactive experience. Each of our tattoos features bold, cartoon-like designs that spring to life when viewed through your phone. Whether it’s a butterfly taking flight or a vibrant animation lighting up your arm, our tattoos are designed to inspire wonder and awe.</p>
+            <p>Perfect for kids’ birthday parties, festivals, or any event that calls for a touch of magic, InkVision temporary tattoos are easy to use and fun to share. Simply scan the dedicated QR code for your tattoo, follow the prompts, and watch as the artwork transforms into an amazing AR experience right before your eyes.</p>
+            <p>At InkVision, we’re pushing the boundaries of creativity and technology to turn temporary tattoos into a living canvas.</p>
+            <p style="font-weight: 600;">Let’s make your next tattoo unforgettable — inkVision style!</p>
+        
+        <!--<div class="steps">
             <p>step 1. Open tattoo</p>
             <p>step 2. Apply tattoo</p>
             <p>step 3. Take out phone and scan QR code on package to open AR web app</p>
             <p>step 4. Scan tattoo with app</p>
-        </div>
+        </div>-->
         
     </div>
-
-    <div class="tattoo-showcase">
-        <!-- <div class="img-wrapper">
-            <img src="Assets/Images/inkVisionTransparent.png" alt=""> 
-        </div> -->
-        <div class="img-wrapper">
-            <img src="Assets/Images/candy2.png" alt="">
-        </div> 
-        <div class="img-wrapper">
-            <img src="Assets/Images/present2.png" alt=""> 
-        </div>
-        <div class="img-wrapper">
-            <img src="Assets/Images/recordPlayer2.png" alt="">
-        </div> 
     </div>
+    <div id="tattoos" class="tattoos">
+        <h3>Birthday Party Tattoos</h3>
+        <div class="tattoo-showcase">
+            <!-- <div class="img-wrapper">
+                <img src="Assets/Images/inkVisionTransparent.png" alt=""> 
+            </div> -->
+            <div class="img-wrapper">
+                <img src="Assets/Images/candy2.png" alt="">
+            </div> 
+            <div class="img-wrapper">
+                <img src="Assets/Images/present2.png" alt=""> 
+            </div>
+            <div class="img-wrapper">
+                <img src="Assets/Images/recordPlayer2.png" alt="">
+            </div> 
+        </div>
+    </div>
+
+    <div class="section">
+        <div id="how" class="how">
+            <h3>How to Enjoy Your Tattoo!</h3>
+            <iframe width="239" height="424.5" src="https://www.youtube.com/embed/SD8-FSRsqcQ" title="How To Enjoy your inkVision Temporary Tattoo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <ol>
+                <li>Skin should be clean & dry.</li>
+                <li>Remove clear top sheet.</li>
+                <li>Press tattoo, design facing down, onto skin.</li>
+                <li>Hold wet cloth against back of tattoo.</li>
+                <li>Wait 10 seconds, then peel off paper backing.</li>
+                <li>Scan your tattoo's QR code to visit your tattoo's site.</li>
+                <li>Point your camera at your tattoo.</li>
+                <li>Watch it come alive!</li>
+            </ol>
+        </div>
+    </div>
+    
+    <footer>
+        <p>Capstone Project for IMD @ Confederation College</p>
+        <p>Created by: Michelle Kelly, Matthew Shields, Isaak Siltamaki, Natalie Zarins</p>
+    </footer>
     
 </body>
 </html>
