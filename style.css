@@ -14,12 +14,11 @@
 }
 
 body {
-    /* background: rgb(80,0,84); */
     background: linear-gradient(0deg, #28002c 95%, rgba(81,0,108,1) 100%) no-repeat center center fixed;
     background-size: cover;
     color: #f8e9ef;
     font-family: 'Arial Rounded MT Regular';
-
+    margin: 0;
 }
 
 .header {
@@ -55,6 +54,9 @@ nav a {
 }
 nav a:hover {
     color: #8CD1C5;
+}
+.menu-toggle {
+    display: none;
 }
 .title{
     margin-top: 3vw;
@@ -96,8 +98,9 @@ nav a:hover {
     justify-content: center;
 }*/
 .section {
-    background-color:#f8e9ef;
+    background: linear-gradient(0deg, rgba(40,0,44,1) 0%, rgba(248,233,239,1) 5%, rgba(248,233,239,1) 95%, rgba(40,0,44,1) 100%);
     color: #28002c;
+    padding: 1.5vw 0;
 }
 .section h3 {
     color: #28002c;
@@ -117,18 +120,11 @@ nav a:hover {
     justify-content: center;
     align-items: flex-start;
 }
-/*.fav h3 {
-    width: 30%;
-}*/
 .fav img {
     width: 10vw;
     height: auto;
     object-fit: cover;
 }
-
-/*.about p{
-    text-shadow: 1px 1px rgba(240,248,255,.3);
-}*/
 
 .drop {
     margin-top: 1vw;
@@ -203,66 +199,90 @@ h3 {
     margin: 0 auto;
     padding: 2em 0 2em 0;
 }
-iframe {
-    padding: 2em 0 2em 0;
+.how video {
+    padding: .5em 0 1.5em 0;
+    width: 16.5vw;
+    height: auto;
 }
 
 footer {
     color:#8CD1C5;
     display: flex;
     justify-content: space-between;
-    padding: 2em 0 0 0;
+    padding: 2em 1em 0 1em;
     font-size: 0.8em;
 }
-
-/*@media screen and (max-width: 600px) {
-.title{
-    margin-top: 5vw;
-    margin-bottom: 7vw;
-}
-.title img{
-    width: 65vw;
-    height: auto;
-}
- body {
-    font-size: 1em;
- }
- .about{
-    margin: 1vw 5vw 2vw;
- }
- .demo video{
-    width: 90vw;
-    height: auto;
-}
-.tattoo-showcase {
-    margin: 1vw 5vw 2vw;
-}
-.tattoo-showcase img {
-    width: 15vw;
-    height: auto;
-}
-}*/
-
 
 @media screen and (max-width: 755px) {
     .container {
         text-align: center;
     }
     .container-nav {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
     nav ul {
         flex-direction: column;
-        font-size: 0.8em;
+        font-size: .9em;
     }
     nav li {
         margin: 0.8em 0;
+    }
+    nav a {
+        padding: 2vw;
+        font-size: 1.5em;
+    }
+    .menu-toggle {
+        margin-top: 6vw;
+        display: block;
+    }
+    .links {
+        /* background-color: #4a0051; */
+        /* background-size: cover; */
+        display: none;
+        text-decoration: #8CD1C5 underline;
+        font-size: .8em;
+    }
+    .navLink { 
+        margin-top: 5vw;
+    }
+    .links.open {
+        display: block;
     }
     .demo {
         padding: 0 0 2em 0;
     }
     .demo h2 {
-        font-size: 0.9em;
+        font-size: 1.05em;
+        text-align: center;
+    }
+    .about img {
+        width: 25vw;
+        height: auto;
+    }
+    .tattoos {
+        padding: 1em 0 1em 0;
+    }
+    .tattoos h3 {
+        margin-bottom: 0;
+        text-align: center;
+    }
+    .how {
+        padding: 2.5em 0 2.5em 0;
+    }
+    .how h3{
+        text-align: center;
+    }
+    .how video {
+        padding: .5em 0 1em 0;
+        width: 70vw;
+        height: auto;
+        margin-inline: auto;
+    }
+    footer {
+        font-size: .5em;
+    }
+    .align-right {
+        text-align: right;  
     }
 }
 @media screen and (min-width: 1300px) {
