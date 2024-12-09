@@ -19,6 +19,8 @@ body {
     color: #f8e9ef;
     font-family: 'Arial Rounded MT Regular';
     margin: 0;
+
+    overflow-x: hidden;
 }
 
 .header {
@@ -92,11 +94,6 @@ nav a:hover {
     filter: drop-shadow(1px 1px 5px #f8e9ef93);
 }
 
-/*.about {
-    margin: 1vw 17vw 2vw;
-    display: inline-block;
-    justify-content: center;
-}*/
 .section {
     background: linear-gradient(0deg, rgba(40,0,44,1) 0%, rgba(248,233,239,1) 5%, rgba(248,233,239,1) 95%, rgba(40,0,44,1) 100%);
     color: #28002c;
@@ -199,8 +196,10 @@ h3 {
     margin: 0 auto;
     padding: 2em 0 2em 0;
 }
-iframe {
+.how video {
     padding: .5em 0 1.5em 0;
+    width: 16.5vw;
+    height: auto;
 }
 
 footer {
@@ -214,16 +213,22 @@ footer {
 @media screen and (max-width: 755px) {
     .container {
         text-align: center;
+    
     }
     .container-nav {
         flex-direction: column-reverse;
     }
+    nav {
+        width: 150%;
+        margin-bottom: 3vw;
+    }
     nav ul {
         flex-direction: column;
         font-size: .9em;
+        margin: 0;
     }
     nav li {
-        margin: 0.8em 0;
+        margin: 0;
     }
     nav a {
         padding: 2vw;
@@ -234,14 +239,16 @@ footer {
         display: block;
     }
     .links {
-        /* background-color: #4a0051; */
-        /* background-size: cover; */
+        background-color: #4a0051;
+        background-size: cover;
+
         display: none;
         text-decoration: #8CD1C5 underline;
         font-size: .8em;
     }
     .navLink { 
-        margin-top: 5vw;
+        padding: 2vw 0;
+        border-bottom: #28002c 1px solid;
     }
     .links.open {
         display: block;
@@ -270,8 +277,10 @@ footer {
     .how h3{
         text-align: center;
     }
-    iframe {
+    .how video {
         padding: .5em 0 1em 0;
+        width: 70vw;
+        height: auto;
         margin-inline: auto;
     }
     ol {
